@@ -1,0 +1,161 @@
+/*global styles*/
+*{
+    margin:0px;
+    padding:0px;
+}
+/*macro-containers*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.grid-container{
+    max-height:100vh;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,25%);
+}
+/*header area*/
+header{
+    width:100%;
+    height:60px;
+    grid-column:1/5;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.google-controls__container{
+    width:260px;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.google-controls__container a{
+    text-decoration: none;
+    color:#5f6368;
+}
+.google-controls__container > a:hover{
+    text-decoration:underline;
+}
+/*google menu buttons*/
+.google-menu{
+    height:24px;
+    width:24px;
+    border-radius:50%;
+    padding:8px;
+}
+.google-menu:hover{
+    background:lightgrey;
+    cursor:pointer;
+}
+.google-user{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+}
+.google-user:hover{
+    background:lightgrey;
+    cursor:pointer;
+}
+/*google apps area*/
+.google-apps-toggle{
+    position:absolute;
+    display:none;
+    right:20px;
+    top:50px;
+    padding:15px;
+    width:330px;
+    height:400px;
+    box-sizing:border-box;
+    z-index:100;
+}
+.toogle-apps__container:hover > .google-apps-toggle,.google-apps-toggle:hover{
+    display:block;
+}
+.google-apps-toggle__box{
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+    background:#fff;
+    border-radius:8px;
+    padding:15px;
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap:wrap;
+    box-shadow:1px 1px 5px #000;
+}
+.google-apps-toggle__item{
+    width:70px;
+    height:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    margin:5px;
+}
+.google-apps-toggle__item:hover{
+    background:#EBF8FF;
+}
+.google-apps-toggle__item img{
+    width:auto;
+    height:40px;
+    border-radius:50%;
+    margin:4px;
+}
+.google-apps-toggle__box::scrollbar-thumb{
+    background:#5f6368;
+    border-radius:5px;
+}
+/*account area*/
+.google-account-toggle__item{
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#5f6368;
+    border-bottom:1px solid #DEDEDE;
+}
+.google-account-toggle__item a{
+    padding:5px;
+}
+.google-account-toggle__item a:hover{
+    background:#EBF8FF;
+}
+.google-account-toggle__item input:hover{
+    background:#EBF8FF;
+    cursor:pointer;
+}
+.google-user-icon{
+    height:80px;
+    width:auto;
+    border-radius:50%;
+    margin:5px;
+
+}
+.google-account-toggle__item__container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+.btn-admin-accounts{
+    margin:15px 0px;
+    border-radius:20px;
+    border:1px solid #D1D1D1;
+    padding:10px;
+    background:#fff;
+    color:#5f6368;
+}
+.google-add-user-icon{
+    height:40px;
+    width:auto;
+    border-radius:50%;
+    background:lightgrey;
+    margin:10px
+}
+.onhover:hover{
+    background:#EBF8FF;
+    cursor:pointer;
+}

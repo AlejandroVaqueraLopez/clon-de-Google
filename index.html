@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clon de Google</title>
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="grid-container">
+        <!--header-->
         <header>
             <div class="google-controls__container">
+                <!--links a gmail y google imágenes-->
                 <a href="https://mail.google.com/mail/u/0/?ogbl">
                     <h5>
                        Gmail
@@ -26,7 +30,7 @@
                 </a>
                 <div class="toogle-apps__container">
                     <img class="google-menu"src="./src/images/google-menu-icon.png" alt="google-menu-icon">
-
+                    <!--Bloque desplegable donde puedes ver las apps de Google-->
                     <div class="google-apps-toggle">
                         <div class="google-apps-toggle__box">
                             <a href="#">
@@ -137,6 +141,7 @@
                 <div class="toogle-apps__container">
                     <img class="google-user" src="./src/images/devf-icon.png" alt="google-user-icon">
                     <div class="google-apps-toggle">
+                    <!--Bloque desplegable donde puedes ver detalles de tu inicio de sesión de Google-->
                         <div class="google-apps-toggle__box">
                             <div class="google-account-toggle__item">
                                 <img class="google-user-icon" src="./src/images/devf-icon.png" alt="google-user-icon">
@@ -168,12 +173,14 @@
                 </div>
             </div>
         </header>
+        <!--main-->
         <main>
             <!--Primer section-->
             <section class="logo-container">
                 <img id="logo" src="./src/images/google-logo.png" alt="google-logo.png">
             </section>
             <nav class="navigation-container">
+                <!--Barra de navegación-->
                 <div class="nav-input-group">
                     <img class="search-lent" src="./src/images/search-icon.png" alt="search-icon">
                     <input id="input-search" class="search-bar" type="text">
@@ -183,12 +190,13 @@
                             <h6>B&uacutesqueda por voz</h6>
                         </div>
                     </a>
+                    <!--Bloque desplegable para mostrar historial de búsqueda-->
                     <div class="search-history">
                         <div class="search-input-group">
                             <a class="btn-search" href="#" id="search">
                                 <h5>Buscar con Google</h5>
                             </a>
-                            <a class="btn-lucky" href="#" id="lucky">
+                            <a class="btn-lucky" href="https://www.google.com/doodles" id="lucky">
                                 <h5>Me siento con suerte</h5>
                             </a>
                         </div>
@@ -201,7 +209,7 @@
                     <a class="btn-search" href="#" id="search">
                         <h5>Buscar con Google</h5>
                     </a>
-                    <a class="btn-lucky" href="#" id="lucky">
+                    <a class="btn-lucky" href="https://www.google.com/doodles" id="lucky">
                         <h5>Me siento con suerte</h5>
                     </a>
                 </div>
@@ -213,69 +221,58 @@
                 </div>
             </section>
         </main>
+        <!--footer-->
         <footer>
             <h5>M&eacutexico</h5>
             <hr>
+        <!--links del footer-->
             <div class="footer-content">
                 <div class="footer-content__item left-side">
-                    <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                    <a class="footer-link" href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">
                         <h5>Sobre Google</h5>
                     </a>
-                    <a href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                    <a class="footer-link" href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
                         <h5>Publicidad</h5>
                     </a>
-                    <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">
+                    <a class="footer-link" href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">
                         <h5>Negocios</h5>
                     </a>
-                    <a href="https://www.google.com/search/howsearchworks/?fg=1">
+                    <a class="footer-link" href="https://www.google.com/search/howsearchworks/?fg=1">
                         <h5>C&oacutemo funciona la B&uacutesqueda</h5>
                     </a>
                 </div>
                 <div class="footer-content__item right-side">
-                    <a href="https://policies.google.com/privacy?hl=es-419&fg=1">
+                    <a class="footer-link" href="https://policies.google.com/privacy?hl=es-419&fg=1">
                         <h5>Privacidad</h5>
                     </a>
-                    <a href="https://policies.google.com/terms?hl=es-419&fg=1">
+                    <a class="footer-link" href="https://policies.google.com/terms?hl=es-419&fg=1">
                         <h5>Condiciones</h5>
                     </a>
-                    <a  href="#" class="preferences-link">
+                <!--Bloque desplegable de preferencias de google-->
+                    <a  href="#" class="footer-link preferences-link">
                         <h5>Preferencias</h5>
                         <div class="preferences-container">
                             <ul>
                                 <li>
-                                    <a href="https://www.google.com/preferences?hl=es-419&fg=1">
-                                        <h5>Configuraci&oacuten de b&uacutesqueda</h5>
-                                    </a>
+                                    <h5>Configuraci&oacuten</h5>
                                 </li>
                                 <li>
-                                    <a href="https://www.google.com/advanced_search?hl=es-419&fg=1">
-                                        <h5>B&uacutesqueda avanzada</h5>
-                                    </a>
+                                    <h5>B&uacutesqueda avanzada</h5>
                                 </li>
                                 <li>
-                                    <a href="https://myaccount.google.com/yourdata/search?utm_source=googlemenu&fg=1&pli=1">
-                                        <h5>Tus datos en la B&uacutesqueda</h5>
-                                    </a>
+                                    <h5>Tus datos en la b&uacutesqueda</h5>
                                 </li>
                                 <li>
-                                    <a href="https://myactivity.google.com/product/search?utm_source=google&hl=es-419&fg=1">
-                                        <h5>Historial de B&uacutesqueda</h5>
-                                    </a>
+                                    <h5>Historial de b&uacutesqueda</h5>
                                 </li>
                                 <li>
-                                    <a href="https://support.google.com/websearch/?visit_id=637803398262927248-3882654605&hl=es-419&rd=2#topic=3378866">
-                                        <h5>Buscar en la ayuda</h5>
-                                    </a>
+                                    <h5>Buscar en la ayuda</h5>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <h5>Enviar comentarios</h5>
-                                    </a>
+                                    <h5>Enviar comentarios</h5>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <h5>Tema oscuro: Desactivado</h5>
-                                    </a>
+                                    <h5>Tema oscuro: Desactivado</h5>
                                 </li>
                             </ul>
                         </div>
