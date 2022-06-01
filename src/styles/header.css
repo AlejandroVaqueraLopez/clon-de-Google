@@ -158,3 +158,28 @@ header{
     background:#EBF8FF;
     cursor:pointer;
 }
+
+@media only screen and (max-width:550px){
+    .google-apps-toggle{
+        position:absolute;
+        display:none;
+        right:10px;
+        top:50px;
+        padding:15px;
+        width:240px;
+        height:400px;
+        box-sizing:border-box;
+        z-index:100;
+    }
+
+    .btn-admin-accounts{
+        margin:15px 0px;
+        border-radius:20px;
+        border:1px solid #D1D1D1;
+        padding:10px;
+        background:#fff;
+        color:#5f6368;
+        width:100%;
+        font-size:10px;
+    }
+}
